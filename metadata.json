@@ -1,0 +1,7 @@
+{
+  "name": "Camila Rufino - Biomedicina Estética",
+  "description": "Landing page premium focada em autoridade e conversão para agendamentos via WhatsApp.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

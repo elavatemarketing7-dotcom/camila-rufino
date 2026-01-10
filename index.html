@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Rufino | Biomedicina Estética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d54a20b12c.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --brown-primary: #6D4C41; /* Marrom Sofisticado */
+            --brown-dark: #3E2723;
+            --white-pure: #FFFFFF;
+            --white-soft: #FDFBF9;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--white-pure);
+            color: var(--brown-dark);
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+            color: var(--brown-dark);
+        }
+        .bg-gold { background-color: var(--brown-primary); }
+        .text-gold { color: var(--brown-primary); }
+        .border-gold { border-color: var(--brown-primary); }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .ticker-animate {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+        .quiz-overlay {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--white-soft);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--brown-primary);
+            border-radius: 10px;
+        }
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(109, 76, 65, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(109, 76, 65, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(109, 76, 65, 0); }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
